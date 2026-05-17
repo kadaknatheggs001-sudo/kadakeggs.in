@@ -168,7 +168,20 @@ export const ProductPackSection = () => {
 
 /* MOBILE CARD */
 
-const PackCard = ({ pack }) => (
+interface Pack {
+  id: string;
+  name: string;
+  count: number;
+  image: string;
+  bestFor: string;
+  description: string;
+  pricePerEgg: number;
+  totalPrice: number;
+  deliveryNote: string;
+  isBestValue?: boolean;
+}
+
+const PackCard = ({ pack }: { pack: Pack }) => (
   <div className="relative bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100">
 
     {pack.isBestValue && (
