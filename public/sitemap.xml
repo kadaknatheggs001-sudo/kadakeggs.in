@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage / Main SPA entry -->
   <url>
     <loc>https://www.kadakeggs.in/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.kadakeggs.in/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kadakeggs.in/" />
+
+    <!-- Hero image -->
+    <image:image>
+      <image:loc>https://www.kadakeggs.in/hero-bg.jpeg</image:loc>
+      <image:caption>Premium Kadaknath Eggs Bengaluru – Farm Fresh Kali Masi Eggs</image:caption>
+      <image:title>Kadaknath Eggs Bengaluru – Kadak Eggs</image:title>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+      <image:license>https://www.kadakeggs.in/</image:license>
+    </image:image>
+
+    <!-- Product: Pack of 6 -->
+    <image:image>
+      <image:loc>https://www.kadakeggs.in/Images/6.jpeg</image:loc>
+      <image:caption>Pack of 6 Kadaknath Eggs – ₹150 | Buy in Bengaluru</image:caption>
+      <image:title>Kadaknath Eggs Pack of 6 – ₹150</image:title>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+    </image:image>
+
+    <!-- Product: Pack of 12 -->
+    <image:image>
+      <image:loc>https://www.kadakeggs.in/Images/12.jpeg</image:loc>
+      <image:caption>Pack of 12 Kadaknath Eggs – ₹300 | Buy in Bengaluru</image:caption>
+      <image:title>Kadaknath Eggs Pack of 12 – ₹300</image:title>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+    </image:image>
+
+    <!-- Product: Pack of 30 -->
+    <image:image>
+      <image:loc>https://www.kadakeggs.in/Images/30.jpeg</image:loc>
+      <image:caption>Pack of 30 Kadaknath Eggs – ₹690 Free Delivery | Best Value</image:caption>
+      <image:title>Kadaknath Eggs Pack of 30 – ₹690 Free Delivery Bengaluru</image:title>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+    </image:image>
+
+    <!-- Kadaknath Chicken image -->
+    <image:image>
+      <image:loc>https://www.kadakeggs.in/Images/img1.png</image:loc>
+      <image:caption>Kadaknath Black Chicken (Kali Masi) – Premium Breed India</image:caption>
+      <image:title>Kadaknath Hen – Kali Masi Black Chicken</image:title>
+    </image:image>
+
+    <!-- Delivery visual -->
+    <image:image>
+      <image:loc>https://www.kadakeggs.in/Images/img2.png</image:loc>
+      <image:caption>Kadaknath Egg Delivery Bengaluru – JP Nagar BTM Jayanagar</image:caption>
+      <image:title>Kadaknath Eggs Home Delivery Bengaluru</image:title>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+    </image:image>
+
+    <!-- Kadaknath Chicken breed -->
+    <image:image>
+      <image:loc>https://www.kadakeggs.in/Images/img3.png</image:loc>
+      <image:caption>Premium Kadaknath Black Chicken – Kali Masi Breed India</image:caption>
+      <image:title>Kadaknath Black Chicken India – Kali Masi</image:title>
+    </image:image>
+
+    <!-- Fitness image -->
+    <image:image>
+      <image:loc>https://www.kadakeggs.in/Images/b1.png</image:loc>
+      <image:caption>Kadaknath Eggs for Fitness and Athletes – High Protein Nutrition</image:caption>
+      <image:title>High Protein Kadaknath Eggs for Fitness</image:title>
+    </image:image>
   </url>
+
 </urlset>
