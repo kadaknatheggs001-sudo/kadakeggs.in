@@ -7,6 +7,7 @@ import { SubscriptionSection } from './components/SubscriptionSection';
 import { ProductPackSection } from './components/ProductPackSection';
 import { TermsPage, PrivacyPage } from './components/LegalPages';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Credits  from './components/Credits';
 // --- Components ---
 
@@ -1186,6 +1187,7 @@ export default function App() {
       <ScrollToTop />
       <WhatsAppButton />
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
