@@ -1,73 +1,19 @@
 {
   "name": "Kadak Kadaknath Eggs",
   "short_name": "Kadak Eggs",
-  "description": "Premium farm-fresh Kadaknath (Kali Masi) black chicken eggs delivered across Bengaluru. 25% more protein, less than 1% cholesterol. Packs from ₹150.",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "background_color": "#0B0B0B",
-  "theme_color": "#D4AF37",
-  "orientation": "portrait-primary",
-  "lang": "en-IN",
-  "dir": "ltr",
-  "categories": ["food", "health", "shopping"],
-  "id": "https://www.kadakeggs.in/",
   "icons": [
     {
       "src": "/favicon_io/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "/favicon_io/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/favicon_io/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/favicon_io/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/favicon_io/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon_io/favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon_io/favicon-16x16.png",
-      "sizes": "16x16",
       "type": "image/png"
     }
   ],
-  "shortcuts": [
-    {
-      "name": "Order Now on WhatsApp",
-      "short_name": "Order Now",
-      "description": "Order Kadaknath eggs instantly on WhatsApp",
-      "url": "https://wa.me/918123232781",
-      "icons": [{ "src": "/favicon_io/android-chrome-192x192.png", "sizes": "192x192" }]
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/Images/hero-bg.jpeg",
-      "type": "image/jpeg",
-      "label": "Kadak Kadaknath Eggs – Premium Black Chicken Eggs Bengaluru"
-    }
-  ],
-  "prefer_related_applications": false
+  "theme_color": "#0B0B0B",
+  "background_color": "#0B0B0B",
+  "display": "standalone"
 }

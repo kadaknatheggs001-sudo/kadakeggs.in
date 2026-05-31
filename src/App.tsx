@@ -30,16 +30,14 @@ const Navbar = ({ activePage, setActivePage }: { activePage: string, setActivePa
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass-morphism py-2 md:py-3 shadow-sm' : 'bg-transparent py-3 md:py-5'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <div className="flex items-center cursor-pointer group" onClick={() => setActivePage('home')} role="button" aria-label="Go to home page">
-          <div className="w-10 h-10 md:w-12 md:h-12 bg-brand-black rounded-xl flex items-center justify-center mr-3 md:mr-4 shrink-0 group-hover:bg-brand-gold transition-colors">
-            <span className="text-brand-gold font-black text-xl md:text-2xl group-hover:text-brand-black">K</span>
-          </div>
-          <div>
-            <span className="text-xl md:text-2xl font-black tracking-tighter text-brand-black leading-none block">KADAK</span>
-            <p className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold">Kadaknath Eggs</p>
-          </div>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass-morphism shadow-sm' : 'bg-transparent'}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-14 md:h-16">
+        <div className="flex items-center justify-center h-full cursor-pointer group" onClick={() => setActivePage('home')} role="button" aria-label="Go to home page">
+          <img
+            src="/logo.jpeg"
+            alt={BRAND_NAME}
+            className="h-10 md:h-12 w-auto block object-contain object-center shrink-0 group-hover:opacity-90 transition-opacity"
+          />
         </div>
 
         {/* Desktop Nav */}
@@ -119,11 +117,12 @@ const Footer = ({ setActivePage }: { setActivePage: (page: string) => void }) =>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center mb-4 md:mb-6">
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-gold rounded-lg flex items-center justify-center mr-2 md:mr-3">
-                <span className="text-brand-black font-bold text-lg md:text-xl">K</span>
-              </div>
-              <h2 className="text-lg md:text-xl font-bold tracking-tight">KADAK KADAKNATH</h2>
+            <div className="mb-4 md:mb-6">
+              <img
+                src="/logo.jpeg"
+                alt={BRAND_NAME}
+                className="h-16 md:h-20 w-auto"
+              />
             </div>
             <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
               Providing premium, farm-fresh Kadaknath eggs to health-conscious families across India. Experience the power of black chicken nutrition.
@@ -381,14 +380,14 @@ const HomePage = ({ setActivePage }: { setActivePage: (page: string) => void }) 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="md:col-span-8 p-8 md:p-12 rounded-4xl bg-brand-black text-white relative overflow-hidden group"
+              className="md:col-span-8 p-6 md:p-12 rounded-4xl bg-brand-black text-white relative overflow-hidden group"
             >
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-brand-gold/20 rounded-2xl flex items-center justify-center mb-8 text-brand-gold">
-                  <Zap size={32} />
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-brand-gold/20 rounded-2xl flex items-center justify-center mb-4 md:mb-8 text-brand-gold">
+                  <Zap size={24} className="md:w-8 md:h-8" />
                 </div>
-                <h3 className="text-3xl md:text-5xl font-bold mb-6">25% More Protein</h3>
-                <p className="text-xl text-gray-400 max-w-xl leading-relaxed">
+                <h3 className="text-2xl md:text-5xl font-bold mb-3 md:mb-6">25% More Protein</h3>
+                <p className="text-sm md:text-xl text-gray-400 max-w-xl leading-relaxed">
                   Kadaknath eggs are a concentrated source of high-quality protein, essential for muscle repair, growth, and overall vitality.
                 </p>
               </div>
@@ -401,14 +400,14 @@ const HomePage = ({ setActivePage }: { setActivePage: (page: string) => void }) 
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="md:col-span-4 p-8 rounded-4xl bg-brand-gold text-brand-black flex flex-col justify-between"
+              className="md:col-span-4 p-6 md:p-8 rounded-4xl bg-brand-gold text-brand-black flex flex-col justify-between"
             >
-              <div className="w-12 h-12 bg-black/10 rounded-xl flex items-center justify-center mb-6">
-                <Heart size={24} aria-hidden="true" />
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-black/10 rounded-xl flex items-center justify-center mb-4 md:mb-6">
+                <Heart size={20} className="md:w-6 md:h-6" aria-hidden="true" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-4">Heart Friendly</h3>
-                <p className="font-medium opacity-80">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Heart Friendly</h3>
+                <p className="text-sm md:text-base font-medium opacity-80">
                   With less than 1% cholesterol, it's the safest choice for heart health.
                 </p>
               </div>
@@ -420,14 +419,14 @@ const HomePage = ({ setActivePage }: { setActivePage: (page: string) => void }) 
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="md:col-span-4 p-8 rounded-4xl bg-brand-white border border-gray-100 flex flex-col justify-between group hover:border-brand-gold/30 transition-all"
+              className="md:col-span-4 p-6 md:p-8 rounded-4xl bg-brand-white border border-gray-100 flex flex-col justify-between group hover:border-brand-gold/30 transition-all"
             >
-              <div className="w-12 h-12 bg-brand-gold/10 rounded-xl flex items-center justify-center mb-6 text-brand-gold group-hover:scale-110 transition-transform">
-                <ShieldCheck size={24} aria-hidden="true" />
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-brand-gold/10 rounded-xl flex items-center justify-center mb-4 md:mb-6 text-brand-gold group-hover:scale-110 transition-transform">
+                <ShieldCheck size={20} className="md:w-6 md:h-6" aria-hidden="true" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-4">Immunity Boost</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Immunity Boost</h3>
+                <p className="text-sm md:text-base text-gray-600">
                   Rich in antioxidants and vitamins that strengthen your body's defense.
                 </p>
               </div>
@@ -439,12 +438,12 @@ const HomePage = ({ setActivePage }: { setActivePage: (page: string) => void }) 
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="md:col-span-8 p-8 md:p-12 rounded-4xl bg-brand-green text-white relative overflow-hidden"
+              className="md:col-span-8 p-6 md:p-12 rounded-4xl bg-brand-green text-white relative overflow-hidden"
             >
-              <div className="relative z-10 flex flex-col md:flex-row items-center gap-8">
+              <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-8">
                 <div className="md:w-2/3">
-                  <h3 className="text-3xl font-bold mb-4">Rich in Iron</h3>
-                  <p className="text-lg text-white/70">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">Rich in Iron</h3>
+                  <p className="text-sm md:text-lg text-white/70">
                     Helps in preventing anemia and boosting energy levels naturally. Essential for women and growing children.
                   </p>
                 </div>
